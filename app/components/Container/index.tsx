@@ -1,6 +1,13 @@
 import { ReactNode } from "react";
-import styles from './Container.module.scss';
+import styles from "./Container.module.scss";
 
-export default function Container({children}: {children: ReactNode}) {
-  return <div className={styles['container']}>{children}</div>
+type ContainerTypes = {
+  children: ReactNode;
+  className?: string;
+};
+
+export default function Container({ children, className }: ContainerTypes) {
+  return (
+    <div className={`${`w-4/5 ml-auto mr-auto`} ${className ? className : ''}`}>{children}</div>
+  );
 }

@@ -3,6 +3,7 @@ import { GraphQLClient } from "graphql-request";
 import { gql } from "graphql-request";
 import Image from "next/image";
 import { ReactNode } from "react";
+import Container from "../components/Container";
 
 const hygraph = new GraphQLClient(
   'https://api-sa-east-1.hygraph.com/v2/clq1gfmmn27jk01uk799k5kp3/master',

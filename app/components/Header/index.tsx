@@ -4,13 +4,14 @@ import Container from "../Container";
 
 type HeaderTypes = {
   children: ReactNode;
+  siteTitle?: string
 };
 
-export default function Header({ children }: HeaderTypes) {
+export default function Header({ children, siteTitle }: HeaderTypes) {
   return (
     <header className={styles["header"]}>
-      <Container>
-        <h1>Simples tech blog</h1>
+      <Container className="flex justify-between">
+        <h1>{siteTitle}</h1>
         {children}
       </Container>
     </header>
