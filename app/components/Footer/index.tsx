@@ -1,3 +1,10 @@
-export default function Footer() {
-  return <footer><h1>Simples tech footer</h1></footer>
+type FooterTypes = {
+  siteTitle?: string;
+};
+export default function Footer({ siteTitle }: FooterTypes) {
+  return (
+    <footer>
+      <h1>{siteTitle}</h1>
+    </footer>
+  );
 }

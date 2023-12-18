@@ -4,8 +4,11 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
+import Container from "./components/Container";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const SITE_TITLE = "Portfólio 2024";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,11 +23,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header>
+        <Header siteTitle={SITE_TITLE}>
           <Navigation />
         </Header>
-        <main>{children}</main>
-        <Footer />
+        <main className="min-h-screen">
+          <Container className="mt-11">
+            {children}
+          </Container>
+        </main>
+        <Footer siteTitle={SITE_TITLE} />
       </body>
     </html>
   );
