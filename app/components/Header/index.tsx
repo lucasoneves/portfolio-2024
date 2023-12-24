@@ -10,7 +10,7 @@ type HeaderTypes = {
 export default function Header({ children, siteTitle }: HeaderTypes) {
   return (
     <header className={styles["header"]}>
-      <Container className="flex justify-between">
+      <Container className="flex items-center justify-between">
         <h1>{siteTitle}</h1>
         {children}
       </Container>

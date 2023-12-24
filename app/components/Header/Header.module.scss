@@ -1,6 +1,9 @@
 .header { 
-  background: linear-gradient(to right, #451b99, #2e86de, #01a3a4);
+  background: var(--under-the-sea);
   padding: 21px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .container-header {
   display: flex;

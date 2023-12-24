@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --sunflower: #FFC312;
+  --android-green: #A3CB38;
+  --puffins: #EE5A24;
+  --pixelated: #009432;
+  --merchant: #0652DD;
+  --bara-red: #ED4C67;
+  --morbital: #5758BB;
+  --under-the-sea: #1B1464;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,10 +30,12 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+      to right,
+      #0c0c0e,
+      #0c0931,
+      #051229
     )
     rgb(var(--background-start-rgb));
     font-family: "Inter";
+    font-size: 14px;
 }
