@@ -1,12 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from './styles/Home.module.scss';
 
 export default async function Home() {
   return (
     <section className="mt-40">
-      <h2 className="text-5xl">
+      <h2 className="text-5xl text-center">
         Hello! I&apos;m <strong>Lucas Neves</strong>
       </h2>
-      <h3 className="text-5xl mt-4">
+      <h3 className="text-5xl mt-4 text-center">
         A <strong>Front-end developer</strong> based in Brazil.
       </h3>
       <p className="text-xl mt-8">
@@ -27,33 +28,28 @@ export default async function Home() {
       </p>
 
       <article className="mt-32">
-        <h3 className="text-5xl">
+        <h3 className="text-5xl text-center">
           <strong>Minha stack</strong>
         </h3>
         <ul className={`${styles['stacks']} mt-10 text-center`}>
           <li className="text-xl mt-5">
-            <strong className="block mb-3 text-2xl">HTML</strong>Com foco no uso correto das tags{" "}
-            <strong>HTML</strong>, aperfeiçoando a acessbilidade e usabilidade.
+            <strong className="block mb-3 text-2xl">HTML</strong>Acessbilidade, semântica e SEO.
           </li>
           <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>CSS</strong>Trabalho com funcionalidades modernas do{" "}
-            <strong>CSS</strong>, como{" "}
-            <strong>CSS Grid, Flexbox, CSS Modules</strong>, entre outros.
+            <strong className='block mb-3 text-2xl'>CSS</strong>
+            <strong>CSS Grid, Flexbox, CSS Modules</strong>, <strong>Tailwind</strong>, entre outros.
           </li>
           <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>Javascript</strong>Utilizo <strong>Javascript</strong>{" "}
-            para adicionar interatividade ao seu projeto, utilizando
-            tecnologias modernas como <strong>React.js e Vue.js</strong>, e seus
+            <strong className='block mb-3 text-2xl'>Javascript</strong><strong>React.js, Vue.js</strong> e seus
             frameworks, <strong>Next.js e Nuxt.js</strong>, respectivamente.
           </li>
           <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>Node.js</strong>Também atuo com desenvolvimento de
-            API&apo;s com <strong>Express.js</strong>, possibilitando o consumo
-            dos dados externamente.
+            <strong className='block mb-3 text-2xl'>Node.js</strong>Desenvolvimento de
+            API's com <strong>Express.js</strong>
           </li>
           <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>PostgreSql</strong>Tenho familiaridade com banco de dados,
-            utilizando <strong>PostgreSql</strong> como ORM.
+            <strong className='block mb-3 text-2xl'>PostgreSql</strong>
+            Utilizo <strong>Prisma</strong> como ORM.
           </li>
         </ul>
       </article>
