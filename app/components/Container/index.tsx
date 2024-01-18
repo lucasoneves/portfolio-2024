@@ -8,6 +8,6 @@ type ContainerTypes = {
 
 export default function Container({ children, className }: ContainerTypes) {
   return (
-    <div className={`${`w-4/5 ml-auto mr-auto`} ${className ? className : ''}`}>{children}</div>
+    <div className={` max-w-5xl ${` px-2 ml-auto mr-auto`} ${className ? className : ''}`}>{children}</div>
   );
 }
