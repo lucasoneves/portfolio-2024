@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import styles from './styles/Home.module.scss';
+import Card from "./components/Card";
+import styles from "./styles/Home.module.scss";
+import Image from "next/image";
 
 export default async function Home() {
   return (
@@ -31,26 +33,86 @@ export default async function Home() {
         <h3 className="text-5xl text-center">
           <strong>Minha stack</strong>
         </h3>
-        <ul className={`${styles['stacks']} mt-10 text-center`}>
-          <li className="text-xl mt-5">
-            <strong className="block mb-3 text-2xl">HTML</strong>Acessbilidade, semântica e SEO.
-          </li>
-          <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>CSS</strong>
-            <strong>CSS Grid, Flexbox, CSS Modules</strong>, <strong>Tailwind</strong>, entre outros.
-          </li>
-          <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>Javascript</strong><strong>React.js, Vue.js</strong> e seus
-            frameworks, <strong>Next.js e Nuxt.js</strong>, respectivamente.
-          </li>
-          <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>Node.js</strong>Desenvolvimento de
-            API's com <strong>Express.js</strong>
-          </li>
-          <li className="text-xl mt-5">
-            <strong className='block mb-3 text-2xl'>PostgreSql</strong>
-            Utilizo <strong>Prisma</strong> como ORM.
-          </li>
+        <ul className={`${styles["stacks"]} mt-10 text-center`}>
+          <Card>
+              <Image
+                alt="React.js Logo"
+                width={40}
+                height={40}
+                className="mb-3"
+                src={
+                  "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+                }
+              />
+            <strong className="block text-2xl">
+              React{" "}
+            </strong>
+          </Card>
+          <Card>
+              <Image
+                alt="React.js Logo"
+                width={40}
+                height={40}
+                className="mb-3"
+                src={
+                  "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png"
+                }
+              />
+            <strong className="block text-2xl">
+              Next.js{" "}
+            </strong>
+          </Card>
+          <Card>
+              <Image
+                alt="React.js Logo"
+                width={40}
+                height={40}
+                className="mb-3"
+                src={
+                  "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/367_Vuejs_logo-512.png"
+                }
+              />
+            <strong className="block text-2xl">
+              Vue.js{" "}
+            </strong>
+          </Card>
+          <Card>
+              <Image
+                alt="React.js Logo"
+                width={40}
+                height={40}
+                className="mb-3"
+                src={
+                  "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png"
+                }
+              />
+            <strong className="block text-2xl">
+              Node.js{" "}
+            </strong>
+          </Card>
+          <Card>
+              <Image
+                alt="React.js Logo"
+                width={40}
+                height={40}
+                className="mb-3"
+                src={
+                  "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/nuxt-dot-js-512.png"
+                }
+              />
+            <strong className="block text-2xl">
+              Nuxt.js{" "}
+            </strong>
+          </Card>
+          <Card>
+            <strong className="block text-2xl">Express.js</strong>
+          </Card>
+          <Card>
+            <strong className="block text-2xl">PostgreSql</strong>
+          </Card>
+          <Card>
+            <strong className="block text-2xl">Prisma</strong>
+          </Card>
         </ul>
       </article>
     </section>

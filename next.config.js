@@ -8,6 +8,24 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: "https",
+        hostname: "cdn1.iconfinder.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn4.iconfinder.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.drupal.org",
+        port: "",
+        pathname: "/files/project-images/**",
+      }
     ],
   },
 }
