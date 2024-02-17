@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter } from "@next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Container from "./components/Container";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight: '400' });
 
 const SITE_TITLE = "Portfólio 2024";
 

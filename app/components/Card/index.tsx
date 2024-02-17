@@ -1,12 +1,20 @@
 import { ReactNode } from "react";
-import styles from './Card.style.module.scss'
+import styles from "./Card.style.module.scss";
 
 type Card = {
   children: ReactNode;
+  color: string;
 };
 
-function Card({ children }: { children: ReactNode }) {
-  return <article className={`${styles['card']} p-4 backdrop-blur-2xl flex items-center flex-col justify-center rounded-lg`}>{children}</article>;
+function Card({ children, color }: Card) {
+  return (
+    <article
+      style={{ backgroundColor: color }}
+      className={`${styles["card"]} p-4 shadow-md flex h-24 items-center justify-center font-bold rounded-lg text-xl`}
+    >
+      {children}
+    </article>
+  );
 }
 
 export default Card;
